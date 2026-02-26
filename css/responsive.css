@@ -1,0 +1,561 @@
+/* 跨境数字资产咨询中心 - 响应式样式 */
+
+/* 平板设备 (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.75rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .services-grid,
+    .features-grid,
+    .cases-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 移动设备 (576px - 768px) */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    .hero {
+        padding: 6rem 0 3rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .hero-stats {
+        justify-content: space-between;
+        gap: var(--spacing-lg);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .services-grid,
+    .features-grid,
+    .cases-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .services-overview,
+    .why-us,
+    .cases-preview,
+    .cta-section {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    /* 导航菜单响应式 */
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        padding: var(--spacing-xl);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: var(--spacing-md) 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .nav-menu a:last-child {
+        border-bottom: none;
+    }
+    
+    .btn-contact {
+        width: 100%;
+        text-align: center;
+        margin-top: var(--spacing-md);
+    }
+    
+    .language-switcher {
+        margin-left: 0;
+        margin-top: var(--spacing-md);
+        justify-content: center;
+    }
+    
+    /* 页脚响应式 */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-md);
+    }
+    
+    .footer-bottom-links {
+        justify-content: center;
+    }
+    
+    .cta-title {
+        font-size: 2rem;
+    }
+    
+    .cta-description {
+        font-size: 1rem;
+    }
+}
+
+/* 小移动设备 (< 576px) */
+@media (max-width: 576px) {
+    html {
+        font-size: 13px;
+    }
+    
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-xl);
+    }
+    
+    .stat-item {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .service-card,
+    .feature-item,
+    .case-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .btn-large {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .cta-title {
+        font-size: 1.75rem;
+    }
+    
+    .footer {
+        padding: var(--spacing-2xl) 0 var(--spacing-lg);
+    }
+}
+
+/* 超大屏幕 (> 1440px) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 2.75rem;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .services-grid,
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .cases-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* 打印样式 */
+@media print {
+    .navbar,
+    .hero-buttons,
+    .cta-section,
+    .footer {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    .hero {
+        padding: 2rem 0;
+        background: none;
+    }
+    
+    .hero-title {
+        font-size: 24pt;
+        color: black;
+    }
+    
+    .hero-subtitle {
+        font-size: 14pt;
+        color: #666;
+    }
+    
+    .services-overview,
+    .why-us,
+    .cases-preview {
+        padding: 1rem 0;
+    }
+    
+    .service-card,
+    .feature-item,
+    .case-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        page-break-inside: avoid;
+    }
+}
+
+/* 高对比度模式 */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #0056b3;
+        --primary-dark: #004494;
+        --text-color: #000000;
+        --text-light: #333333;
+        --border-color: #000000;
+    }
+    
+    .btn-primary {
+        border: 2px solid #000000;
+    }
+    
+    .service-card,
+    .case-card {
+        border: 2px solid #000000;
+    }
+}
+
+/* 减少动画 */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* 深色模式 */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #0f172a;
+        --bg-light: #1e293b;
+        --text-color: #f1f5f9;
+        --text-light: #94a3b8;
+        --border-color: #334155;
+    }
+    
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+    
+    .navbar {
+        background-color: rgba(15, 23, 42, 0.95);
+    }
+    
+    .nav-menu a {
+        color: var(--text-color);
+    }
+    
+    .hero {
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    }
+    
+    .hero-title {
+        color: var(--text-color);
+    }
+    
+    .service-card,
+    .case-card {
+        background-color: var(--bg-light);
+        color: var(--text-color);
+    }
+    
+    .service-description,
+    .case-description {
+        color: var(--text-light);
+    }
+    
+    .footer {
+        background-color: #020617;
+    }
+}
+
+/* 横屏模式 */
+@media (orientation: landscape) and (max-height: 500px) {
+    .hero {
+        padding: 4rem 0 2rem;
+        min-height: auto;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .services-overview,
+    .why-us,
+    .cases-preview {
+        padding: 1.5rem 0;
+    }
+    
+    .service-card,
+    .feature-item,
+    .case-card {
+        padding: 1rem;
+    }
+}
+
+/* 触摸设备优化 */
+@media (hover: none) and (pointer: coarse) {
+    .btn,
+    .nav-menu a,
+    .service-link,
+    .case-link {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-menu a {
+        padding: 12px 0;
+    }
+    
+    .service-card,
+    .case-card {
+        cursor: default;
+    }
+    
+    .service-card:hover,
+    .case-card:hover {
+        transform: none;
+        box-shadow: var(--shadow-md);
+    }
+}
+
+/* 视网膜屏幕优化 */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo-text,
+    .section-title,
+    .hero-title {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* 折叠屏设备 */
+@media (max-width: 280px) {
+    html {
+        font-size: 12px;
+    }
+    
+    .container {
+        padding: 0 8px;
+    }
+    
+    .logo-text {
+        font-size: 1.25rem;
+    }
+    
+    .logo-subtitle {
+        font-size: 0.625rem;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+}
+
+/* 性能优化：延迟加载内容 */
+@media (prefers-reduced-data: reduce) {
+    .hero {
+        background: var(--bg-light);
+    }
+    
+    .service-icon,
+    .feature-icon {
+        display: none;
+    }
+    
+    .hero-stats {
+        display: none;
+    }
+}
+
+/* 辅助功能：焦点样式 */
+@media (prefers-reduced-motion: no-preference) {
+    *:focus {
+        outline: 3px solid var(--primary-color);
+        outline-offset: 2px;
+    }
+    
+    *:focus:not(:focus-visible) {
+        outline: none;
+    }
+    
+    *:focus-visible {
+        outline: 3px solid var(--primary-color);
+        outline-offset: 2px;
+    }
+}
+
+/* 阅读模式 */
+@media (prefers-color-scheme: light) and (prefers-contrast: more) {
+    body {
+        font-size: 18px;
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .container {
+        max-width: 800px;
+    }
+    
+    .services-grid,
+    .features-grid,
+    .cases-grid {
+        grid-template-columns: 1fr;
+    }
+}
